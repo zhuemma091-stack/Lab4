@@ -1,0 +1,53 @@
+* {
+    border: 1px dotted black;
+}
+
+@media (width >=768px) {
+
+    .site-header {
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main {
+
+        padding: 20px;
+    }
+
+    .hero-grid {
+
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+
+        grid-template-areas:
+            "gird-left"
+            "grid-right";
+    }
+
+    .cards-gallery {
+
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+        gap: 10px;
+
+    }
+
+    .site-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media (width < 768px) {
+
+    body {
+        display: grid;
+
+        grid-template-columns: 1fr;
+    }
+}
